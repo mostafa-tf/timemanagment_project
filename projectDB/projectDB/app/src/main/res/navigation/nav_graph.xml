@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.projectdb.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.example.projectdb.TasksFragment"
+        android:label="task_frag"
+        tools:layout="@layout/task_frag" >
+        <action
+            android:id="@+id/action_tasksFragment_to_analyzeFragment"
+            app:destination="@id/analyzeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/analyzeFragment"
+        android:name="com.example.projectdb.AnalyzeFragment"
+        android:label="fragment_analyze"
+        tools:layout="@layout/fragment_analyze" >
+        <argument
+            android:name="nbtasks"
+            app:argType="integer" />
+        <argument
+            android:name="nbdonetasks"
+            app:argType="integer" />
+        <argument
+            android:name="nbundonetasks"
+            app:argType="integer" />
+    </fragment>
+</navigation>

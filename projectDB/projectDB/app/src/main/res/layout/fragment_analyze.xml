@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/analyzefraglayout"
+    android:background="@drawable/background_image"
+    >
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:text="Number Of Tasks "
+        android:textColor="#FF000000"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textColor="#FF000000"
+        android:textSize="65sp"
+         />
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+    android:textColor="#FF00FF00"
+        android:text="Number Of Completed Tasks " />
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textSize="65sp"
+        android:textColor="#FF00FF00"
+android:text=""
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal"
+        android:textSize="22sp"
+        android:textColor="#FFFF0000"
+        android:text="Number Of Uncompleted Tasks " />
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="#FFFF0000"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textSize="65sp"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_horizontal"
+        android:text="Percentage Of Achievements "
+        android:textColor="#00FFFF"
+        android:textSize="27sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_marginTop="20dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+
+    android:max="100"
+    android:progressDrawable="@drawable/custom_progress_drawable" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal"
+        android:textSize="70sp"
+        android:textColor="#A52A2A"
+        android:text="TextView" />
+</LinearLayout>
